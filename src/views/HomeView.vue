@@ -1,11 +1,13 @@
 <template>
   <div class="bg-gray-950 text-white min-h-screen relative">
     <NavbarComponent />
-    <HeroComponent />
-    <WhatsAppConnectComponent />
-    <WhatsAppInstructionsComponent />
-    <FrontEndInstructionsComponent />
-    <TechonologyListComponent />
+    <HeroComponent id="inicio" />
+    <WhatsAppConnectComponent id="conectar-whatsapp" />
+    <WhatsAppInstructionsComponent id="instrucciones-bot" />
+    <FrontEndInstructionsComponent id="panel-administracion" />
+    <ProjectInstructionsComponent id="instalar-proyecto" />
+    <TechonologyListComponent id="tecnologias" />
+    <SiteFooterComponent />
   </div>
 </template>
 
@@ -16,4 +18,6 @@ import WhatsAppConnectComponent from '../components/WhatsAppConnectComponente.vu
 import WhatsAppInstructionsComponent from '../components/WhatsAppInstructionsComponent.vue'
 import FrontEndInstructionsComponent from '../components/FrontEndInstructionsComponent.vue'
 import TechonologyListComponent from '../components/TechonologyListComponent.vue'
+import ProjectInstructionsComponent from '../components/ProjectInstructionsComponent.vue'
+import SiteFooterComponent from '../components/SiteFooterComponent.vue'
 </script>

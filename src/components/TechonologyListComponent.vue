@@ -8,33 +8,58 @@
         </p>
       </div>
 
-      <!-- Marquee container -->
+      <!-- Marquee wrapper -->
+      <!-- Contenedor marquee -->
       <div class="relative overflow-hidden">
-        <!-- Primer marquee (derecha a izquierda) -->
-        <div class="flex items-center marquee">
-          <div v-for="(tech, index) in technologies" :key="'first-' + index" class="mx-8 flex-shrink-0">
-            <div class="flex flex-col items-center">
+        <div class="marquee-track flex items-center gap-x-12">
+          <template v-for="(tech, index) in [...technologies, ...technologies]" :key="index">
+            <div class="flex flex-col items-center flex-shrink-0">
               <img :src="tech.logo" :alt="tech.name"
-                class="h-16 w-16 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                class="h-16 w-16 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
               <span class="mt-2 text-sm font-medium text-gray-300">{{ tech.name }}</span>
             </div>
-          </div>
-        </div>
-
-        <!-- Segundo marquee (izquierda a derecha, para efecto continuo) -->
-        <div class="flex items-center marquee marquee-reverse">
-          <div v-for="(tech, index) in technologies" :key="'second-' + index" class="mx-8 flex-shrink-0">
-            <div class="flex flex-col items-center">
-              <img :src="tech.logo" :alt="tech.name"
-                class="h-16 w-16 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-              <span class="mt-2 text-sm font-medium text-gray-300">{{ tech.name }}</span>
-            </div>
-          </div>
+          </template>
         </div>
       </div>
+
     </div>
   </div>
 </template>
+
+<style scoped>
+.marquee-track {
+  width: max-content;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausar animación al pasar el mouse */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+
+/* Responsive image size */
+@media (max-width: 640px) {
+  .marquee-track {
+    animation-duration: 20s;
+  }
+
+  img {
+    height: 12vw;
+    width: 12vw;
+  }
+}
+</style>
 
 <script setup lang="ts">
 import { ref } from 'vue';
@@ -54,55 +79,3 @@ const technologies = ref([
 ]);
 
 </script>
-
-<style scoped>
-.marquee {
-  display: flex;
-  animation: scroll 30s linear infinite;
-  width: calc(200%);
-}
-
-.marquee-reverse {
-  animation: scrollReverse 30s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scrollReverse {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Efecto hover para pausar la animación */
-.marquee:hover,
-.marquee-reverse:hover {
-  animation-play-state: paused;
-}
-
-/* Ajustes para móviles */
-@media (max-width: 640px) {
-
-  .marquee,
-  .marquee-reverse {
-    animation-duration: 20s;
-  }
-
-  img {
-    height: 12vw;
-    width: 12vw;
-  }
-}
-</style>
