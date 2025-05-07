@@ -5,6 +5,7 @@
     <WhatsAppConnectComponent />
     <WhatsAppInstructionsComponent />
     <FrontEndInstructionsComponent />
+    <TechonologyListComponent />
   </div>
 </template>
 
@@ -14,4 +15,5 @@ import HeroComponent from '../components/HeroComponent.vue'
 import WhatsAppConnectComponent from '../components/WhatsAppConnectComponente.vue'
 import WhatsAppInstructionsComponent from '../components/WhatsAppInstructionsComponent.vue'
 import FrontEndInstructionsComponent from '../components/FrontEndInstructionsComponent.vue'
+import TechonologyListComponent from '../components/TechonologyListComponent.vue'
 </script>
