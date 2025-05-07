@@ -72,12 +72,10 @@ const navItems = [
   { id: 'panel-administracion', label: 'Panel de Administración' },
   { id: 'instalar-proyecto', label: 'Instalar Proyecto' },
   { id: 'tecnologias', label: 'Tecnologías' },
-
 ]
 
-
 // Scroll suave
-function scrollToSection(id) {
+function scrollToSection(id: string): void { // Se agrega el tipo string
   const el = document.getElementById(id)
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' })
