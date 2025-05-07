@@ -88,14 +88,14 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 
-// Asegúrate de tener este componente global o importarlo
-
+// Asegúrate de que el componente o función esté correctamente configurado
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)
   if (element) {
+    // Desplazamiento suave al elemento con el id
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // Cambia la URL sin recargar la página (mantener el ID en la URL)
     history.replaceState(null, '', `#${id}`)
   }
 }

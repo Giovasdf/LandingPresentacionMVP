@@ -238,9 +238,9 @@
 </template>
 
 <script setup lang="ts">
-const copyToClipboard = (text) => {
+const copyToClipboard = (text: string) => {
   navigator.clipboard.writeText(text);
-  // Aquí puedes agregar una notificación de que se copió el texto
-  alert(`"${text}" copiado al portapapeles`);
+  alert(`"${text}" copied to clipboard`);
 };
+
 </script>
