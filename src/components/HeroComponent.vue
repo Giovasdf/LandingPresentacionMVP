@@ -14,7 +14,7 @@
       <div class="mx-auto max-w-4xl py-20 sm:py-32 lg:py-40 text-center">
         <!-- Título principal -->
         <h1 class="text-4xl mb-20 font-semibold sm:text-5xl lg:text-6xl text-white leading-tight">
-          MediBot: Gestión Automática de Pedidos en Farmacias vía WhatsApp e Inteligencia Artificial
+          MediBot: Sistema SaaS para Gestión Automatizada de Pedidos en Farmacias vía WhatsApp e Inteligencia Artificial
         </h1>
 
         <!-- Descripción -->
@@ -22,7 +22,7 @@
           <strong>Estudiante:</strong> Giovanni Molina<br>
           <strong>Docente:</strong> Mauricio Hidalgo Barrientos<br>
           <strong>Institución:</strong> IPLACEX<br>
-          <strong>Fecha:</strong>20-Mayo-2025
+          <strong>Fecha:</strong> 20-Mayo-2025
         </p>
 
 
@@ -42,16 +42,13 @@
 </template>
 
 <script lang="ts" setup>
-// Aquí puedes agregar funciones si es necesario, actualmente no es necesario.
 </script>
 
 <style scoped>
-/* Agregamos algunos estilos adicionales para mejorar la animación de los botones y efectos */
 .text-justify {
   text-align: justify;
 }
 
-/* Mejora en los bordes de los botones y las transiciones */
 a:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);

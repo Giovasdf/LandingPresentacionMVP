@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white dark:bg-gray-900 fixed w-full z-10 top-0 shadow">
+  <header class="bg-white dark:bg-gray-800 fixed w-full z-10 top-0 shadow">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
       <!-- Logo -->
       <div class="flex lg:flex-1 items-center">
