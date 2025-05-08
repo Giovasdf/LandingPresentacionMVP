@@ -1,39 +1,49 @@
-# LandingPresentacionMVP
+# MediBot - Instrucciones del Proyecto de Título
 
-This template should help get you started developing with Vue 3 in Vite.
+Este repositorio contiene las instrucciones para la revisión del proyecto de título de Giovanni Andrés Molina Galleguillos, estudiante de Ingeniería en Informática en IPLACEX.
+Para acceder al instructivo de uso del MVP, sigue este enlace:
+🔗 https://giovasdf.github.io/LandingPresentacionMVP/
 
-## Recommended IDE Setup
+## 🧠 Descripción del Proyecto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<strong>Título:</strong> MediBot: Sistema SaaS para Gestión Automatizada de Pedidos en Farmacias vía WhatsApp e Inteligencia Artificial
 
-## Type Support for `.vue` Imports in TS
+Este proyecto busca facilitar la gestión de pedidos en farmacias a través de un sistema automatizado que utiliza WhatsApp como canal de comunicación principal.
+Combina tecnologías web modernas y un modelo de inteligencia artificial (Mistral 7B) para interactuar con los usuarios y asistirlos de manera inteligente.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 👨‍🎓 Datos Académicos
 
-## Customize configuration
+- <strong>Estudiante:</strong> Giovanni Molina
+- <strong>Docente:</strong> Mauricio Hidalgo Barrientos
+- <strong>Institución:</strong> IPLACEX
+- <strong>Fecha:</strong> 20-Mayo-2025
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Tecnologías Utilizadas
 
-## Project Setup
+- Vue.js
+- Vite
+- Node.js
+- Express
+- PocketBase
+- Twilio (para integración con WhatsApp)
+- Mistral 7B (IA conversacional)
+- Railway
+- Heroku
+- Cypress (testing E2E)
+- Vitest (testing unitario)
 
-```sh
-npm install
-```
+## 📝 Contenido del Repositorio
 
-### Compile and Hot-Reload for Development
+Este repositorio incluye:
 
-```sh
-npm run dev
-```
+- Instrucciones para conectar el bot de WhatsApp
+- Secciones guiadas para la instalación y administración
+- Código del frontend en Vue 3 con navegación fluida
 
-### Type-Check, Compile and Minify for Production
+## 📎 Enlace a la Presentación
 
-```sh
-npm run build
-```
+👉 [Ver MVP](https://giovasdf.github.io/LandingPresentacionMVP/)
 
-### Lint with [ESLint](https://eslint.org/)
+## ⚖️ Licencia
 
-```sh
-npm run lint
-```
+Este proyecto se encuentra bajo licencia MIT.
