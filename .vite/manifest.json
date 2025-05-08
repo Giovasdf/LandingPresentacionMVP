@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "file": "assets/main-D9MQigWJ.js",
+    "file": "assets/main-MeM69iVr.js",
     "name": "main",
     "src": "index.html",
     "isEntry": true,
@@ -8,12 +8,12 @@
       "assets/main-D1PqflvJ.css"
     ],
     "assets": [
-      "assets/VideoFinalPagina-BC6cn6hz.gif",
+      "assets/VideoFinalPagina-svZUo5dq.gif",
       "assets/image-D6akX2xm.png"
     ]
   },
   "src/assets/VideoFinalPagina.gif": {
-    "file": "assets/VideoFinalPagina-BC6cn6hz.gif",
+    "file": "assets/VideoFinalPagina-svZUo5dq.gif",
     "src": "src/assets/VideoFinalPagina.gif"
   },
   "src/assets/image.png": {
